@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Ammly Kinyua</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 11pt;
+            line-height: 1.4;
+            color: #2d3748;
+        }
+        
+        .section-title {
+            color: #1a202c;
+            letter-spacing: 0.5px;
+        }
+        
+        .job-title {
+            color: #2b6cb0;
+        }
+        
+        .company-name {
+            color: #1a202c;
+        }
+        
+        @media print {
+            body { margin: 0; padding: 0; }
+            .container { max-width: 100%; margin: 0; padding: 0.5in; }
+            .section-spacing { margin-bottom: 0.3rem; }
+            .work-item { margin-bottom: 0.25rem; }
+            .no-print { display: none; }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 p-4">
+    <div class="max-w-4xl mx-auto bg-white p-4 shadow-md rounded-lg container">
+        <header class="pb-3 mb-4 border-b-2 border-blue-600">
+            <h1 class="text-3xl font-bold text-gray-800">Ammly Kinyua</h1>
+            <p class="text-sm text-gray-600 mt-1 font-medium">Cybersecurity Professional | Threat Intelligence Specialist | Solutions Developer</p>
+            <div class="flex flex-wrap justify-between mt-2 text-sm text-gray-700">
+                <span>📞 (+254) 726 308068</span>
+                <span>✉️ ammlyf@gmail.com</span>
+                <span>🔗 github.com/ammly</span>
+                <span>💼 linkedin.com/in/ammly</span>
+            </div>
+        </header>
+
+        <section class="mb-3 section-spacing">
+            <h2 class="text-lg font-bold mb-1 border-b-2 border-blue-500 pb-1 section-title">PROFESSIONAL SUMMARY</h2>
+            <p class="text-sm leading-relaxed mt-2">
+                Cybersecurity professional with 5+ years in telecommunications and threat intelligence. Developing KingaSphere CTI platform at Safaricom, specializing in threat detection, MITRE ATT&CK mapping, and automated incident response. Expertise in AI/ML integration, SIEM/EDR orchestration, and scalable security solutions.
+            </p>
+        </section>
+
+        <section class="mb-3 section-spacing">
+            <h2 class="text-lg font-bold mb-2 border-b-2 border-blue-500 pb-1 section-title">WORK EXPERIENCE</h2>
+
+            <div class="mb-2 work-item">
+                <h3 class="text-sm font-semibold">Safaricom Ltd, Nairobi — Cyber Defence, Threat Intelligence <span class="float-right font-normal">Nov 2024 - Present</span></h3>
+                <ul class="list-disc ml-4 mt-1 text-xs">
+                    <li>Developing KingaSphere CTI platform: ingestion pipelines (OSINT, dark web), MITRE ATT&CK mapping, analyst workflows</li>
+                    <li>Built automated playbooks and SIEM/EDR integrations (CrowdStrike) for one-click containment and incident response</li>
+                    <li>Implemented AI/LLM features (Vertex AI, Gemini 2.5Pro) for dialect-aware detection, summarization, TTP/CWE mapping</li>
+                    <li>Designed vector search and RAG workflows using PostgreSQL + pgvector for intelligence retrieval</li>
+                </ul>
+            </div>
+
+            <div class="mb-2 work-item">
+                <h3 class="text-sm font-semibold">Safaricom Ltd, Nairobi — VAS Engineer II <span class="float-right font-normal">July 2019 - Oct 2024</span></h3>
+                <ul class="list-disc ml-4 mt-1 text-xs">
+                    <li>Developed and maintained VAS solutions, automated DevOps processes for FTTH, 4G, and 5G products</li>
+                    <li>Led development of Rich Communication Services (RCS) platform and RCS agents</li>
+                    <li>Delivered enterprise-level telecom solutions as part of Fixed Data Tribe Agile squads</li>
+                </ul>
+            </div>
+
+            <div class="mb-2 work-item">
+                <h3 class="text-sm font-semibold">Sawasawa Ltd, Nairobi — Web Apps Developer <span class="float-right font-normal">Nov 2017 - June 2019</span></h3>
+                <ul class="list-disc ml-4 mt-1 text-xs">
+                    <li>Designed and developed secure web applications using modern frameworks and best practices</li>
+                    <li>Implemented scalable architecture patterns and responsive design for cross-platform compatibility</li>
+                    <li>Collaborated with design and backend teams to deliver full-stack web solutions</li>
+                </ul>
+            </div>
+
+            <div class="mb-2 work-item">
+                <h3 class="text-sm font-semibold">Centum Learning Ltd, Nairobi — Web & Mobile Apps Developer <span class="float-right font-normal">Nov 2017 - June 2018</span></h3>
+                <ul class="list-disc ml-4 mt-1 text-xs">
+                    <li>Built e-learning platforms and mobile training applications for corporate onboarding</li>
+                </ul>
+            </div>
+
+            <div class="mb-1 work-item">
+                <h3 class="text-sm font-semibold">Safaricom Ltd, Nairobi — VAS Support <span class="float-right font-normal">May 2017 - July 2017</span></h3>
+                <ul class="list-disc ml-4 mt-1 text-xs">
+                    <li>Provided technical support for Safaricom's Value Added Services to enterprise and retail customers</li>
+                    <li>Troubleshot and resolved complex VAS integration issues, improving customer satisfaction rates</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mb-3 section-spacing">
+            <h2 class="text-lg font-bold mb-2 border-b-2 border-blue-500 pb-1 section-title">EDUCATION</h2>
+            <div class="text-xs">
+                <div class="mb-1"><strong>Bachelor of Computer Science</strong> — Africa Nazarene University (2012-2015)</div>
+                <div class="mb-1"><strong>DevOps and Cloud Computing</strong> — Moringa School (2020)</div>
+                <div><strong>Applied Computer Science Certificate</strong> — Catholic University of East Africa & IBM Research Lab (2014)</div>
+            </div>
+        </section>
+
+        <section class="mb-2 section-spacing">
+            <h2 class="text-lg font-bold mb-2 border-b-2 border-blue-500 pb-1 section-title">SKILLS</h2>
+            <div class="text-xs">
+                <div class="mb-1"><strong>Cybersecurity & Threat Intelligence:</strong> SIEM, EDR, Threat Hunting, MITRE ATT&CK, OSINT, Dark Web Intelligence, Incident Response</div>
+                <div class="mb-1"><strong>AI/ML Technologies:</strong> Vertex AI, Gemini 2.5 Pro, Vector Search, RAG Workflows, PostgreSQL + pgvector</div>
+                <div class="mb-1"><strong>Automation & Orchestration:</strong> n8n, CI/CD Pipelines, Automated Playbooks, SIEM/EDR Integrations</div>
+                <div class="mb-1"><strong>Cloud & DevOps:</strong> Kubernetes, Docker, AWS, GCP, Linux, Ansible, Terraform, Jenkins</div>
+                <div><strong>Development & Telecom:</strong> Python, Django, JavaScript, PHP, USSD, SDP, Mpesa API, RCS Platform</div>
+            </div>
+        </section>
+
+        <!-- Download Button -->
+        <button id="download" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg mt-4 font-medium transition-colors no-print">Download as PDF</button>
+    </div>
+
+
+    <script>
+        document.getElementById("download").addEventListener("click", function () {
+            const resumeElement = document.querySelector(".max-w-4xl");
+            const downloadButton = document.getElementById("download");
+
+            // Hide the download button
+            downloadButton.style.display = 'none';
+
+            const opt = {
+                margin: 0.5,
+                filename: 'Ammly_Kinyua_Resume.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+            };
+
+            html2pdf().from(resumeElement).set(opt).save().then(() => {
+                // Show the download button after the PDF is generated
+                downloadButton.style.display = 'block';
+            });
+        });
+    </script>
+</body>
+
+</html>
